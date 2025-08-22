@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta RCM - Expert Revenue Cycle Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f8fafc;
+        }
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+        .modal-active {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700">Delta RCM</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 transition">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-700 transition">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-700 transition">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 transition">Contact</a>
+                <a href="#" onclick="openModal('privacyModal')" class="text-gray-600 hover:text-blue-700 transition">Privacy Policy</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-blue-700">Home</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-blue-700">Services</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-700">About Us</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-700">Contact</a>
+            <a href="#" onclick="openModal('privacyModal')" class="block py-2 text-gray-600 hover:text-blue-700">Privacy Policy</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg pt-20 pb-24">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">Expert Revenue Cycle Management That Drives Financial Health</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Delta RCM partners with hospitals and physician practices to optimize billing, eliminate revenue leakage, and accelerate your payments. We turn financial chaos into clinical progress.</p>
+                <a href="#contact" class="bg-blue-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition text-lg">Request a Free RCM Audit</a>
+            </div>
+        </section>
+
+        <!-- Key Metrics Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-700 mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">8-12%</h3>
+                        <p class="text-gray-600 mt-2">Increase in Net Collections</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-700 mx-auto mb-4">
+                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1m0 1H9m3 0h3m-3 12v-1m0 1H9m3 0h3m-6-6v-1m0 1H6m0-1h.01M18 12v-1m0 1h.01M18 11h-1m-1-1v.01M12 18v-1m0 1H9m3 0h3m-3-12h.01M12 5V4m0 1H9m3 0h3"></path></svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">$250M+</h3>
+                        <p class="text-gray-600 mt-2">In Annual Gross Charges Processed</p>
+                    </div>
+                    <div class="p-6">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 text-blue-700 mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">30+ Years</h3>
+                        <p class="text-gray-600 mt-2">Of Combined Industry Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">A Partnership to Perfect Your Revenue Cycle</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mt-4">We provide end-to-end RCM solutions tailored to your unique needs, built on transparency and data-driven insights.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Charge Capture & Medical Coding</h3>
+                        <p class="text-gray-600">Meticulous review to ensure every service is accurately coded and billed. Our onshore and offshore teams maximize efficiency without sacrificing quality.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Payment Posting & Reconciliation</h3>
+                        <p class="text-gray-600">Swift and accurate posting of all payments to maintain a clear view of your financial standing and identify issues instantly.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Denial Management & Appeals</h3>
+                        <p class="text-gray-600">We aggressively pursue and appeal denied claims, dismantling payer delay tactics to recover revenue that others leave behind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="https://placehold.co/400x400/3b82f6/ffffff?text=Nisha+Dave" alt="Nisha Dave, CEO of Delta RCM" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Led by an Expert Who’s Been in Your Shoes</h2>
+                        <p class="text-lg text-gray-600 mb-4">Delta RCM isn't just another billing company. We're led by <strong class="text-gray-900">Nisha Dave, CA, CPA, MBA</strong>, a chartered accountant turned healthcare operator. After uncovering a 17% collections gap for a physician group and helping them scale to a successful exit, she acquired Delta RCM to bring that same operational and financial rigor to clients like you.</p>
+                        <p class="text-gray-600">Under her leadership, Delta RCM has rebuilt its structure, deployed advanced analytics, and consistently boosted net collections by 8-12 percentage points for our clients. Nisha is passionate about transparent partnerships and preparing the next generation of RCM professionals for an AI-augmented future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Let's Improve Your Financial Outlook</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto mt-4">Ready to see how Delta RCM can increase your collections and reduce your administrative burden? Reach out today for a complimentary audit.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <form id="contactForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="text" placeholder="Practice / Hospital Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                             <input type="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                             <input type="tel" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="How can we help you?" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="mb-6">
+                            <label class="flex items-start">
+                                <input type="checkbox" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1" required>
+                                <span class="ml-3 text-sm text-gray-600">By checking this box, I agree to receive Text messages about service updates and appointment reminders from Delta RCM at the phone number provided above. The SMS frequency may vary. Data rates may apply. Text HELP to (company phone number) for assistance. Reply STOP to opt out of receiving SMS messages from Delta RCM. You will receive no further SMS communication.</span>
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition text-lg">Request My Free Audit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Delta RCM. All Rights Reserved.</p>
+            <div class="mt-4">
+                 <a href="#" onclick="openModal('privacyModal')" class="text-gray-400 hover:text-white transition">Privacy Policy & SMS Terms</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">
+        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50" onclick="closeModal('privacyModal')"></div>
+        
+        <div class="modal-container bg-white w-11/12 md:max-w-3xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto">
+            
+            <div class="modal-content py-4 text-left px-6">
+                <!--Title-->
+                <div class="flex justify-between items-center pb-3 border-b">
+                    <p class="text-2xl font-bold">Privacy Policy & SMS Terms of Service</p>
+                    <div class="modal-close cursor-pointer z-50" onclick="closeModal('privacyModal')">
+                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!--Body-->
+                <div class="my-5 h-96 overflow-y-auto pr-4">
+                    <h3 class="font-bold text-lg mb-2">Last Updated: August 22, 2025</h3>
+                    <p class="mb-4">Delta RCM ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+                    
+                    <h4 class="font-bold text-md mb-2">1. Information We Collect</h4>
+                    <p class="mb-4">We may collect personal information that you voluntarily provide to us when you fill out a contact form, such as your name, email address, phone number, and practice name.</p>
+                    
+                    <h4 class="font-bold text-md mb-2">2. How We Use Your Information</h4>
+                    <p class="mb-4">We use the information we collect to respond to your inquiries, provide service information, improve our website, and communicate with you, including via email and SMS/text messages if you have consented.</p>
+                    
+                    <h4 class="font-bold text-md mb-2">3. Data Security</h4>
+                    <p class="mb-4">We use administrative, technical, and physical security measures to help protect your personal information.</p>
+                    
+                    <h3 class="font-bold text-lg mb-2 mt-6 border-t pt-4">4. SMS/Text Messaging Policy & Terms of Service</h3>
+                    <p class="mb-4">This section governs our SMS (text message) communication practices. By providing your consent, you agree to these terms.</p>
+                    
+                    <h5 class="font-semibold text-md mb-2">A. Obtaining Consent</h5>
+                    <p class="mb-4">Your consent to receive SMS messages is obtained through affirmative action, such as checking a designated, non-pre-filled checkbox on our website's contact form. The purpose of the text messages will be clearly stated at the point of consent.</p>
+                    
+                    <h5 class="font-semibold text-md mb-2">B. SMS Consent and Data Privacy</h5>
+                    <p class="mb-4 font-bold">Information obtained for SMS opt-in consent and phone numbers collected for SMS purposes will NOT be shared with, or sold to, any third parties or affiliates for their marketing purposes.</p>
+                    
+                    <h5 class="font-semibold text-md mb-2">C. Types of SMS Communications</h5>
+                    <p class="mb-4">By opting in, you agree to receive messages which may include: updates regarding your account, service information, appointment reminders, follow-ups to your inquiries, or information about your job application status.</p>
+                    
+                    <h5 class="font-semibold text-md mb-2">D. Standard Messaging Disclosures & Commands</h5>
+                    <p class="mb-4">Standard message and data rates may apply. The frequency of messages may vary. You can opt-out at any time.</p>
+                    <ul class="list-disc list-inside mb-4 space-y-2">
+                        <li><strong class="font-mono">START:</strong> "Thank you for opting into SMS messages from Delta RCM. To opt out at any time, reply STOP. Need assistance? Reply HELP. Message and data rates may apply. Messaging frequency may vary."</li>
+                        <li><strong class="font-mono">STOP:</strong> "Thank you for opting out of SMS messages from Delta RCM. You will receive no further SMS communication. To opt back in for Delta RCM at any time, reply START."</li>
+                        <li><strong class="font-mono">HELP:</strong> "Thank you for contacting Delta RCM. For assistance, please email us at info@deltaRCM.com or call us at (Your Company Phone Number)."</li>
+                    </ul>
+                    
+                    <h4 class="font-bold text-md mb-2 mt-6 border-t pt-4">5. Contact Us</h4>
+                    <p>If you have questions or comments about this policy, you may email us at info@deltaRCM.com.</p>
+                </div>
+
+                <!--Footer-->
+                <div class="flex justify-end pt-2 border-t">
+                    <button class="px-4 bg-blue-700 p-3 rounded-lg text-white hover:bg-blue-800" onclick="closeModal('privacyModal')">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Modal functionality
+        function openModal(modalID) {
+            const modal = document.getElementById(modalID);
+            modal.classList.remove('hidden');
+            document.body.classList.add('modal-active');
+        }
+
+        function closeModal(modalID) {
+            const modal = document.getElementById(modalID);
+            modal.classList.add('hidden');
+            document.body.classList.remove('modal-active');
+        }
+
+        // Close modal on escape key press
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            let isEscape = false;
+            if ("key" in evt) {
+                isEscape = (evt.key === "Escape" || evt.key === "Esc");
+            } else {
+                isEscape = (evt.keyCode === 27);
+            }
+            if (isEscape && document.body.classList.contains('modal-active')) {
+                closeModal('privacyModal');
+            }
+        };
+        
+        // Handle form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to a server.
+            // For this example, we'll just show a success message.
+            alert('Thank you for your request! We will be in touch shortly.');
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+</html>
