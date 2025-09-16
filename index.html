@@ -236,8 +236,11 @@
                         <div class="mb-6">
                             <label class="flex items-start">
                                 <input type="checkbox" name="sms_consent" value="agreed" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1" required>
-                                <span class="ml-3 text-sm text-gray-600">By checking this box, I agree to receive Text messages about service updates and appointment reminders from Delta RCM at the phone number provided above. The SMS frequency may vary. Data rates may apply. Text HELP to (company phone number) for assistance. Reply STOP to opt out of receiving SMS messages from Delta RCM. You will receive no further SMS communication.</span>
+                                <span class="ml-3 text-sm text-gray-600">By checking this box, I agree to receive text messages from Delta RCM at the phone number provided above. Messages may include appointment reminders, billing updates, service-related alerts, and two-way service conversations. Message frequency may vary. Standard message and data rates may apply. Text HELP to (925-529-4260) for assistance. Reply STOP to opt out at any time. No further SMS messages will be sent after opting out.</span>
                             </label>
+                            <div class="ml-8 mt-2">
+                                <a href="#" onclick="openModal('privacyModal'); return false;" class="text-sm text-blue-700 hover:underline">Privacy Policy & SMS Terms of Service</a>
+                            </div>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="bg-blue-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition text-lg">Request My Free Audit</button>
@@ -293,39 +296,106 @@
                 </div>
 
                 <!--Body-->
-                <div class="my-5 h-96 overflow-y-auto pr-4 text-sm">
-                    <h3 class="font-bold text-lg mb-2">Last Updated: August 22, 2025</h3>
+                <div class="my-5 h-96 overflow-y-auto pr-4 text-sm space-y-4">
                     
-                    <h4 class="font-bold text-lg mb-2 mt-6 border-t pt-4">Consent to Communication</h4>
-                    <p class="mb-4">Delta Medical Services is committed to protecting your privacy and ensuring you have control over how we communicate with you. We only send SMS or other communications when you have provided explicit consent.</p>
+                    <!-- Privacy Policy -->
+                    <div>
+                        <h3 class="font-bold text-xl mb-3">Privacy Policy</h3>
+                        <p class="mb-2"><strong>Last Updated: September 26, 2025</strong></p>
+                        <p class="mb-4">Delta Medical Services (“we,” “our,” “us”) is committed to protecting your privacy and ensuring you have control over how your information is collected, used, and shared.</p>
 
-                    <h5 class="font-semibold text-md mb-2 mt-4">How Consent is Obtained</h5>
-                    <ul class="list-disc list-inside mb-4 space-y-2">
-                        <li><strong>Checkboxes on forms:</strong> Customers affirm consent by checking a box prior to submission.</li>
-                        <li><strong>Written or verbal agreement:</strong> Consent may also be obtained in writing or through verbal confirmation during service interactions.</li>
-                        <li><strong>Other affirmative actions:</strong> Any action that clearly indicates your agreement (such as opting into SMS updates during registration) will be treated as valid consent.</li>
-                    </ul>
-                    <p class="mb-4">You will not receive SMS or other marketing communications unless you have taken one of these affirmative steps.</p>
+                        <h4 class="font-semibold text-lg mb-2">Information We Collect</h4>
+                        <p>We may collect the following information from you:</p>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                            <li>Contact details (such as your name, phone number, and email address)</li>
+                            <li>Consent preferences (including mobile opt-in and SMS consent status)</li>
+                            <li>Information you voluntarily provide during service interactions</li>
+                        </ul>
 
-                    <h5 class="font-semibold text-md mb-2 mt-4">Sample Consent Wording (Checkbox Example)</h5>
-                    <blockquote class="border-l-4 border-gray-300 pl-4 italic my-4">
-                        “By checking this box, I agree to receive text messages about Revenue Cycle Management (RCM) from Delta Medical Services at the phone number provided above. The SMS frequency may vary. Data rates may apply. Text HELP to 925-753-1986 for assistance. Reply STOP to opt out of receiving SMS messages from Delta Medical Services. You will receive no further SMS communication.”
-                    </blockquote>
+                        <h4 class="font-semibold text-lg mb-2 mt-4">How We Use Information</h4>
+                        <p>We use your information for the following purposes:</p>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                            <li>To send SMS or other service-related communications, only after obtaining your explicit consent</li>
+                            <li>To provide customer service and respond to inquiries</li>
+                            <li>To deliver updates, reminders, and other communications related to our services</li>
+                        </ul>
+                        <p class="font-bold mt-2">Mobile opt-in, SMS consent, and phone numbers collected for SMS communication purposes will not be shared with any third party or affiliates for marketing purposes.</p>
 
-                    <h5 class="font-semibold text-md mb-2 mt-4">HIPAA Notice and Limitations of SMS Communication</h5>
-                     <ul class="list-disc list-inside mb-4 space-y-2">
-                        <li>SMS text messaging is not a secure or encrypted form of communication.</li>
-                        <li>Delta Medical Services will not send, request, or accept any Protected Health Information (PHI) over SMS.</li>
-                        <li>You should not share personal health information via SMS.</li>
-                        <li>SMS will be used strictly for general updates, reminders, and service-related communications that do not include PHI.</li>
-                    </ul>
+                        <h4 class="font-semibold text-lg mb-2 mt-4">How Consent Is Obtained</h4>
+                         <ul class="list-disc list-inside my-2 ml-4">
+                            <li><strong>Checkboxes on forms:</strong> You may affirm consent by checking a box prior to submission.</li>
+                            <li><strong>Written or verbal agreement:</strong> Consent may also be provided in writing or verbally during service interactions.</li>
+                            <li><strong>Other affirmative actions:</strong> Any action that clearly indicates agreement (such as opting into SMS updates during registration) is treated as valid consent.</li>
+                        </ul>
+                        <p>You will not receive SMS or other marketing communications unless you have taken one of these affirmative steps.</p>
 
-                    <h5 class="font-semibold text-md mb-2 mt-4">Your Rights</h5>
-                    <ul class="list-disc list-inside mb-4 space-y-2">
-                        <li>You may withdraw consent at any time by replying STOP to any message.</li>
-                        <li>You may request assistance at any time by replying HELP.</li>
-                        <li>You will continue to have access to our services even if you choose not to receive SMS messages.</li>
-                    </ul>
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Your Rights</h4>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                            <li>You may withdraw consent at any time by replying STOP to any SMS message.</li>
+                            <li>You may request assistance at any time by replying HELP or contacting us directly.</li>
+                            <li>Choosing not to receive SMS messages will not affect your ability to access our services.</li>
+                        </ul>
+
+                        <h4 class="font-semibold text-lg mb-2 mt-4">HIPAA Notice and SMS Limitations</h4>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                             <li>SMS text messaging is not a secure or encrypted form of communication.</li>
+                            <li>We will not send, request, or accept any Protected Health Information (PHI) over SMS.</li>
+                            <li>You should not share personal health information via SMS.</li>
+                            <li>SMS is used only for general updates, reminders, and service-related communications that do not include PHI.</li>
+                        </ul>
+                    </div>
+
+                    <!-- SMS Terms & Conditions -->
+                    <div class="border-t pt-4 mt-6">
+                        <h3 class="font-bold text-xl mb-3">SMS Terms & Conditions</h3>
+
+                        <h4 class="font-semibold text-lg mb-2">Consent to Receive SMS</h4>
+                        <p>By providing your mobile phone number and opting in, you agree to receive SMS messages from Delta Medical Services.</p>
+
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Types of SMS Communications</h4>
+                        <p>If you have consented, you may receive messages related to:</p>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                            <li>Appointment reminders</li>
+                            <li>Billing or account updates</li>
+                            <li>Service-related alerts or general updates</li>
+                        </ul>
+                        <p class="italic mt-2"><strong>Example:</strong> “Hello, this is a reminder of your upcoming appointment with Delta Medical Services on [Date] at [Time]. Reply STOP to opt out at any time.”</p>
+
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Message Frequency</h4>
+                        <p>Message frequency may vary depending on the type of communication. You may receive up to 2 SMS messages per week related to appointments, billing, or service updates.</p>
+
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Potential Fees</h4>
+                        <p>Standard message and data rates may apply, depending on your carrier’s pricing plan. Fees may vary if messages are sent domestically or internationally.</p>
+
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Opt-In Methods</h4>
+                        <p>You may opt in to receive SMS messages by:</p>
+                         <ul class="list-disc list-inside my-2 ml-4">
+                            <li>Submitting an online form and checking the SMS consent box</li>
+                            <li>Providing written or verbal consent during a service interaction</li>
+                        </ul>
+
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Opt-Out Methods</h4>
+                        <p>You may opt out of SMS messaging at any time by:</p>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                            <li>Replying STOP to any SMS you receive</li>
+                            <li>Contacting us directly to request removal from our messaging list</li>
+                        </ul>
+
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Help</h4>
+                        <p>If you are experiencing issues with SMS messaging, you can:</p>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                            <li>Reply with the keyword HELP</li>
+                            <li>Contact us directly at (925-529-4260)</li>
+                        </ul>
+                        
+                        <h4 class="font-semibold text-lg mb-2 mt-4">Standard Messaging Disclosures</h4>
+                        <ul class="list-disc list-inside my-2 ml-4">
+                            <li>Message and data rates may apply</li>
+                            <li>Message frequency may vary</li>
+                            <li>You can opt out at any time by texting STOP</li>
+                            <li>For assistance, text HELP or contact us</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!--Footer-->
@@ -375,3 +445,5 @@
 
 </body>
 </html>
+
+
