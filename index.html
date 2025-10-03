@@ -15,13 +15,6 @@
         .hero-bg {
             background-color: #f8fafc;
         }
-        .modal {
-            transition: opacity 0.25s ease;
-        }
-        .modal-active {
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -29,13 +22,13 @@
     <!-- Header & Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-700">Delta RCM</a>
+            <a href="index.html" class="text-2xl font-bold text-blue-700">Delta RCM</a>
             <div class="hidden md:flex space-x-6">
                 <a href="#home" class="text-gray-600 hover:text-blue-700 transition">Home</a>
                 <a href="#services" class="text-gray-600 hover:text-blue-700 transition">Services</a>
                 <a href="#about" class="text-gray-600 hover:text-blue-700 transition">About Us</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-700 transition">Contact</a>
-                <a href="#" onclick="openModal('privacyModal')" class="text-gray-600 hover:text-blue-700 transition">Privacy Policy</a>
+                <a href="privacy.html" class="text-gray-600 hover:text-blue-700 transition">Privacy Policy</a>
             </div>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-700 focus:outline-none">
@@ -49,7 +42,7 @@
             <a href="#services" class="block py-2 text-gray-600 hover:text-blue-700">Services</a>
             <a href="#about" class="block py-2 text-gray-600 hover:text-blue-700">About Us</a>
             <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-700">Contact</a>
-            <a href="#" onclick="openModal('privacyModal')" class="block py-2 text-gray-600 hover:text-blue-700">Privacy Policy</a>
+            <a href="privacy.html" class="block py-2 text-gray-600 hover:text-blue-700">Privacy Policy</a>
         </div>
     </header>
 
@@ -236,10 +229,10 @@
                         <div class="mb-6">
                             <label class="flex items-start">
                                 <input type="checkbox" name="sms_consent" value="agreed" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1" required>
-                                <span class="ml-3 text-sm text-gray-600">By checking this box, I agree to receive text messages from Delta RCM at the phone number provided above. Messages may include conversation sms text messages. Message frequency may vary. Standard message and data rates may apply. Text HELP to (925-529-4260) for assistance. Reply STOP to opt out at any time. No further SMS messages will be sent after opting out.</span>
+                                <span class="ml-3 text-sm text-gray-600">By checking this box, I agree to receive text message from Delta RCM at the phone number provided above. Messages may include conversation sms text messages. Message frequency may vary. Standard message and data rates may apply. Text HELP to (925-529-4260) for assistance. Reply STOP to opt out at any time. No further SMS messages will be sent after opting out.</span>
                             </label>
                             <div class="ml-8 mt-2">
-                                <a href="#" onclick="openModal('privacyModal'); return false;" class="text-sm text-blue-700 hover:underline">Privacy Policy & SMS Terms of Service</a>
+                                <a href="privacy.html" target="_blank" class="text-sm text-blue-700 hover:underline">Privacy Policy & SMS Terms of Service</a>
                             </div>
                         </div>
                         <div class="text-center">
@@ -271,136 +264,12 @@
             <div class="border-t border-gray-700 pt-6 text-sm">
                 <p>&copy; 2025 Delta RCM. All Rights Reserved. | DBA Delta Medical Services</p>
                 <div class="mt-4">
-                     <a href="#" onclick="openModal('privacyModal')" class="hover:text-white transition">Privacy Policy & SMS Terms</a>
+                     <a href="privacy.html" class="hover:text-white transition">Privacy Policy & SMS Terms</a>
                 </div>
             </div>
     
         </div>
     </footer>
-    
-    <!-- Privacy Policy Modal -->
-    <div id="privacyModal" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center hidden">
-        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50" onclick="closeModal('privacyModal')"></div>
-        
-        <div class="modal-container bg-white w-11/12 md:max-w-3xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto">
-            
-            <div class="modal-content py-4 text-left px-6">
-                <!--Title-->
-                <div class="flex justify-between items-center pb-3 border-b">
-                    <p class="text-2xl font-bold">Privacy Policy & SMS Terms of Service</p>
-                    <div class="modal-close cursor-pointer z-50" onclick="closeModal('privacyModal')">
-                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-                        </svg>
-                    </div>
-                </div>
-
-                <!--Body-->
-                <div class="my-5 h-96 overflow-y-auto pr-4 text-sm space-y-4">
-                    
-                    <!-- Privacy Policy -->
-                    <div>
-                        <h3 class="font-bold text-xl mb-3">Privacy Policy</h3>
-                        <p class="mb-2"><strong>Last Updated: September 26, 2025</strong></p>
-                        <p class="mb-4">Delta Medical Services (“we,” “our,” “us”) is committed to protecting your privacy and ensuring you have control over how your information is collected, used, and shared.</p>
-
-                        <h4 class="font-semibold text-lg mb-2">Information We Collect</h4>
-                        <p>We may collect the following information from you:</p>
-                        <ul class="list-disc list-inside my-2 ml-4">
-                            <li>Contact details (such as your name, phone number, and email address)</li>
-                            <li>Consent preferences (including mobile opt-in and SMS consent status)</li>
-                            <li>Information you voluntarily provide during service interactions</li>
-                        </ul>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">How We Use Information</h4>
-                        <p>We use your information for the following purposes:</p>
-                        <ul class="list-disc list-inside my-2 ml-4">
-                            <li>To send SMS or other service-related communications, only after obtaining your explicit consent</li>
-                            <li>To provide customer service and respond to inquiries</li>
-                            <li>To deliver updates, reminders, and other communications related to our services</li>
-                        </ul>
-                        <p class="font-bold mt-2">Mobile opt-in, SMS consent, and phone numbers collected for SMS communication purposes will not be shared with any third party or affiliates for marketing purposes.</p>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">How Consent Is Obtained</h4>
-                         <ul class="list-disc list-inside my-2 ml-4">
-                            <li><strong>Checkboxes on forms:</strong> You may affirm consent by checking a box prior to submission.</li>
-                            <li><strong>Written or verbal agreement:</strong> Consent may also be provided in writing or verbally during service interactions.</li>
-                            <li><strong>Other affirmative actions:</strong> Any action that clearly indicates agreement (such as opting into SMS updates during registration) is treated as valid consent.</li>
-                        </ul>
-                        <p>You will not receive SMS or other marketing communications unless you have taken one of these affirmative steps.</p>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Your Rights</h4>
-                        <ul class="list-disc list-inside my-2 ml-4">
-                            <li>You may withdraw consent at any time by replying STOP to any SMS message.</li>
-                            <li>You may request assistance at any time by replying HELP or contacting us directly.</li>
-                            <li>Choosing not to receive SMS messages will not affect your ability to access our services.</li>
-                        </ul>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">HIPAA Notice and SMS Limitations</h4>
-                        <ul class="list-disc list-inside my-2 ml-4">
-                             <li>SMS text messaging is not a secure or encrypted form of communication.</li>
-                            <li>We will not send, request, or accept any Protected Health Information (PHI) over SMS.</li>
-                            <li>You should not share personal health information via SMS.</li>
-                            <li>SMS is used only for general updates, reminders, and service-related communications that do not include PHI.</li>
-                        </ul>
-                    </div>
-
-                    <!-- SMS Terms & Conditions -->
-                    <div class="border-t pt-4 mt-6">
-                        <h3 class="font-bold text-xl mb-3">SMS Terms & Conditions</h3>
-
-                        <h4 class="font-semibold text-lg mb-2">Consent to Receive SMS</h4>
-                        <p>By providing your mobile phone number and opting in, you agree to receive SMS messages from Delta Medical Services.</p>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Types of SMS Communications</h4>
-                        <p>If you have consented, you may receive messages from us:</p>
-                        
-                        <p class="italic mt-2"><strong>Example:</strong> “Hello, this is a reminder of your upcoming appointment with Delta Medical Services on [Date] at [Time]. Reply STOP to opt out at any time.”</p>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Message Frequency</h4>
-                        <p>Message frequency may vary depending on the type of communication. You may receive up to 2 SMS messages per week related to appointments, billing, or service updates.</p>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Potential Fees</h4>
-                        <p>Standard message and data rates may apply, depending on your carrier’s pricing plan. Fees may vary if messages are sent domestically or internationally.</p>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Opt-In Methods</h4>
-                        <p>You may opt in to receive SMS messages by:</p>
-                         <ul class="list-disc list-inside my-2 ml-4">
-                            <li>Submitting an online form and checking the SMS consent box</li>
-                        </ul>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Opt-Out Methods</h4>
-                        <p>You may opt out of SMS messaging at any time by:</p>
-                        <ul class="list-disc list-inside my-2 ml-4">
-                            <li>Replying STOP to any SMS you receive</li>
-                            <li>Contacting us directly to request removal from our messaging list</li>
-                        </ul>
-
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Help</h4>
-                        <p>If you are experiencing issues with SMS messaging, you can:</p>
-                        <ul class="list-disc list-inside my-2 ml-4">
-                            <li>Reply with the keyword HELP</li>
-                            <li>Contact us directly at (925-529-4260)</li>
-                        </ul>
-                        
-                        <h4 class="font-semibold text-lg mb-2 mt-4">Standard Messaging Disclosures</h4>
-                        <ul class="list-disc list-inside my-2 ml-4">
-                            <li>Message and data rates may apply</li>
-                            <li>Message frequency may vary</li>
-                            <li>You can opt out at any time by texting STOP</li>
-                            <li>For assistance, text HELP or contact us</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Footer-->
-                <div class="flex justify-end pt-2 border-t">
-                    <button class="px-4 bg-blue-700 p-3 rounded-lg text-white hover:bg-blue-800" onclick="closeModal('privacyModal')">Close</button>
-                </div>
-                
-            </div>
-        </div>
-    </div>
 
     <script>
         // Mobile menu toggle
@@ -409,36 +278,7 @@
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-
-        // Modal functionality
-        function openModal(modalID) {
-            const modal = document.getElementById(modalID);
-            modal.classList.remove('hidden');
-            document.body.classList.add('modal-active');
-        }
-
-        function closeModal(modalID) {
-            const modal = document.getElementById(modalID);
-            modal.classList.add('hidden');
-            document.body.classList.remove('modal-active');
-        }
-
-        // Close modal on escape key press
-        document.onkeydown = function(evt) {
-            evt = evt || window.event;
-            let isEscape = false;
-            if ("key" in evt) {
-                isEscape = (evt.key === "Escape" || evt.key === "Esc");
-            } else {
-                isEscape = (evt.keyCode === 27);
-            }
-            if (isEscape && document.body.classList.contains('modal-active')) {
-                closeModal('privacyModal');
-            }
-        };
     </script>
 
 </body>
 </html>
-
-
