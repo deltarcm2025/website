@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & SMS Terms - Delta RCM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-700">Delta RCM</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html#home" class="text-gray-600 hover:text-blue-700 transition">Home</a>
+                <a href="index.html#services" class="text-gray-600 hover:text-blue-700 transition">Services</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-blue-700 transition">About Us</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-blue-700 transition">Contact</a>
+                <a href="privacy.html" class="text-gray-600 hover:text-blue-700 transition">Privacy Policy</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html#home" class="block py-2 text-gray-600 hover:text-blue-700">Home</a>
+            <a href="index.html#services" class="block py-2 text-gray-600 hover:text-blue-700">Services</a>
+            <a href="index.html#about" class="block py-2 text-gray-600 hover:text-blue-700">About Us</a>
+            <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-blue-700">Contact</a>
+            <a href="privacy.html" class="block py-2 text-gray-600 hover:text-blue-700">Privacy Policy</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-6 py-12 md:py-20">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 border-b pb-4">Privacy Policy & SMS Terms of Service</h1>
+
+                <div class="text-gray-700 text-base space-y-6">
+                    
+                    <!-- Privacy Policy -->
+                    <div>
+                        <h2 class="font-bold text-2xl mb-4 text-gray-900">Privacy Policy</h2>
+                        <p class="mb-2"><strong>Last Updated: September 26, 2025</strong></p>
+                        <p class="mb-4">Delta Medical Services (“we,” “our,” “us”) is committed to protecting your privacy and ensuring you have control over how your information is collected, used, and shared.</p>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Information We Collect</h3>
+                        <p>We may collect the following information from you:</p>
+                        <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li>Contact details (such as your name, phone number, and email address)</li>
+                            <li>Consent preferences (including mobile opt-in and SMS consent status)</li>
+                            <li>Information you voluntarily provide during service interactions</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">How We Use Information</h3>
+                        <p>We use your information for the following purposes:</p>
+                        <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li>To send SMS or other service-related communications, only after obtaining your explicit consent</li>
+                            <li>To provide customer service and respond to inquiries</li>
+                            <li>To deliver updates, reminders, and other communications related to our services</li>
+                        </ul>
+                        <p class="font-bold mt-4 p-4 bg-gray-100 rounded-lg">Mobile opt-in, SMS consent, and phone numbers collected for SMS communication purposes will not be shared with any third party or affiliates for marketing purposes.</p>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">How Consent Is Obtained</h3>
+                         <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li><strong>Checkboxes on forms:</strong> You may affirm consent by checking a box prior to submission.</li>
+                            <li><strong>Written or verbal agreement:</strong> Consent may also be provided in writing or verbally during service interactions.</li>
+                            <li><strong>Other affirmative actions:</strong> Any action that clearly indicates agreement (such as opting into SMS updates during registration) is treated as valid consent.</li>
+                        </ul>
+                        <p>You will not receive SMS or other marketing communications unless you have taken one of these affirmative steps.</p>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Your Rights</h3>
+                        <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li>You may withdraw consent at any time by replying STOP to any SMS message.</li>
+                            <li>You may request assistance at any time by replying HELP or contacting us directly.</li>
+                            <li>Choosing not to receive SMS messages will not affect your ability to access our services.</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">HIPAA Notice and SMS Limitations</h3>
+                        <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                             <li>SMS text messaging is not a secure or encrypted form of communication.</li>
+                            <li>We will not send, request, or accept any Protected Health Information (PHI) over SMS.</li>
+                            <li>You should not share personal health information via SMS.</li>
+                            <li>SMS is used only for general updates, reminders, and service-related communications that do not include PHI.</li>
+                        </ul>
+                    </div>
+
+                    <!-- SMS Terms & Conditions -->
+                    <div class="border-t pt-6 mt-8">
+                        <h2 class="font-bold text-2xl mb-4 text-gray-900">SMS Terms & Conditions</h2>
+
+                        <h3 class="font-semibold text-xl mb-2">Consent to Receive SMS</h3>
+                        <p>By providing your mobile phone number and opting in, you agree to receive SMS messages from Delta Medical Services.</p>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Types of SMS Communications</h3>
+                        <p>If you have consented, you may receive messages.</p>
+                        
+                        <p class="italic mt-2"><strong>Example:</strong> “Hello, this is a reminder of your upcoming appointment with Delta Medical Services on [Date] at [Time]. Reply STOP to opt out at any time.”</p>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Message Frequency</h3>
+                        <p>Message frequency may vary depending on the type of communication. For recurring alerts, you may receive up to 2 SMS messages per week. For two-way conversations, message frequency will depend on the interaction.</p>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Potential Fees</h3>
+                        <p>Standard message and data rates may apply, depending on your carrier’s pricing plan. Fees may vary if messages are sent domestically or internationally.</p>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Opt-In Methods</h3>
+                        <p>You may opt in to receive SMS messages by:</p>
+                         <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li>Submitting an online form and checking the SMS consent box</li>
+                            <li>Providing written or verbal consent during a service interaction</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Opt-Out Methods</h3>
+                        <p>You may opt out of SMS messaging at any time by:</p>
+                        <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li>Replying STOP to any SMS you receive</li>
+                            <li>Contacting us directly to request removal from our messaging list</li>
+                        </ul>
+
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Help</h3>
+                        <p>If you are experiencing issues with SMS messaging, you can:</p>
+                        <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li>Reply with the keyword HELP</li>
+                            <li>Contact us directly at (925-529-4260)</li>
+                        </ul>
+                        
+                        <h3 class="font-semibold text-xl mb-2 mt-4">Standard Messaging Disclosures</h3>
+                        <ul class="list-disc list-inside my-2 ml-4 space-y-1">
+                            <li>Message and data rates may apply</li>
+                            <li>Message frequency may vary</li>
+                            <li>You can opt out at any time by texting STOP</li>
+                            <li>For assistance, text HELP or contact us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            
+            <!-- Contact Information -->
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-white mb-2">Contact Us</h3>
+                <p>23 W 6th St, Antioch, CA 94509</p>
+                <p class="mt-1">
+                    <a href="tel:9257531986" class="hover:text-white transition">P: (925) 753-1986</a>
+                </p>
+                <p class="mt-1">
+                    <a href="mailto:billing1@deltarcm.com" class="hover:text-white transition">E: billing1@deltarcm.com</a>
+                </p>
+            </div>
+            
+            <!-- Copyright and Legal -->
+            <div class="border-t border-gray-700 pt-6 text-sm">
+                <p>&copy; 2025 Delta RCM. All Rights Reserved. | DBA Delta Medical Services</p>
+                <div class="mt-4">
+                     <a href="privacy.html" class="hover:text-white transition">Privacy Policy & SMS Terms</a>
+                </div>
+            </div>
+    
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
